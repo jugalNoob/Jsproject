@@ -5,7 +5,8 @@ let obj={
     classes:'10th',
     gender:'male',
     sex:'lun',
-    schoole:'sexhouse'
+    schoole:'sexhouse',
+    mobile:'opi'
 }
 return obj
 }
