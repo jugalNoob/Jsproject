@@ -4,7 +4,8 @@ let obj={
     roll:'45',
     classes:'10th',
     gender:'male',
-    sex:'lun'
+    sex:'lun',
+    schoole:'sexhouse'
 }
 return obj
 }
