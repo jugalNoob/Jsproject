@@ -1,0 +1,21 @@
+stages:
+  - run
+
+run_js:
+  stage: run
+  image: node:18
+  script:
+    - node simple-js-project/js.js
+  only:
+    - main
+
+
+# Goal:
+
+# You want your project on GitHub to automatically trigger GitLab CI/CD and optionally sync changes back to GitHub.
+
+
+# .
+# ├── .gitlab-ci.yml
+# ├── simple-js-project
+# │   └── js.js
