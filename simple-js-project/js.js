@@ -3,7 +3,8 @@ let obj={
     name:'jugal',
     roll:'45',
     classes:'10th',
-    gender:'male'
+    gender:'male',
+    sex:'lun'
 }
 return obj
 }

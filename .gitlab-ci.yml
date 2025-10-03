@@ -1,11 +1,26 @@
 stages:
   - run
+  - deploy
 
 run_js:
   stage: run
   image: node:18
   script:
+    - echo "Running JS file..."
     - node simple-js-project/js.js
+  only:
+    - main
+
+pages:
+  stage: deploy
+  script:
+    # Create folder for GitLab Pages
+    - mkdir .public
+    # Copy HTML file into folder
+    - cp simple-js-project/index.html .public/
+  artifacts:
+    paths:
+      - .public
   only:
     - main
 
@@ -19,3 +34,4 @@ run_js:
 # ├── .gitlab-ci.yml
 # ├── simple-js-project
 # │   └── js.js
+        
